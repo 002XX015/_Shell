@@ -1,0 +1,4 @@
+/home/mark/Desktop/data/geass/_Shell/CMakeFiles/edit_cache.dir
+/home/mark/Desktop/data/geass/_Shell/CMakeFiles/exec.dir
+/home/mark/Desktop/data/geass/_Shell/CMakeFiles/rebuild_cache.dir
+/home/mark/Desktop/data/geass/_Shell/CMakeFiles/shellLib.dir
