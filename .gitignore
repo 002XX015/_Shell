@@ -1,0 +1,6 @@
+*.[oa]
+CMakeFiles/
+/cmake_install.cmake
+/CMakeCache.txt
+/exec
+/Makefile
