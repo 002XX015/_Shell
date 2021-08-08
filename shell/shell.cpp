@@ -20,17 +20,41 @@ Shell::~Shell()
 
 int Shell::help(std::vector<std::string>& arg)
 {
-    std::cout << "Shell v0.9" << std::endl;
+    std::cout << "Shell v0.1" << std::endl;
+    std::cout << '\n';
 
-    for (short i = 0; i != quantity_commands; i++)
-    {
-        if (list_of_command[i] == "help")
-            std::cout << "help: Command help: show you list of command";
-        else if (list_of_command[i] == "cd")
-            std::cout << "cd: Command cd: moves your location";
+    sleep(1);
 
-        std::cout << std::endl;
-    }
+    std::cout << "@                                                @" << std::endl;
+    std::cout << "@@@                                             @@" << std::endl;
+    std::cout << "@@@@@                                         @@@@" << std::endl;
+    std::cout << "@@@@@@@@                                   @@@@@@@" << std::endl;
+    std::cout << "@@@@@@@@@@                               @@@@@@@@@" << std::endl;
+
+    sleep(1);
+
+    std::cout << "@@@@@  @@@@@@                         @@@@@@  @@@@" << std::endl;
+    std::cout << "@@@@@    @@@@@@                     @@@@@@    @@@@" << std::endl;
+    std::cout << "@@@@@       @@@@@@               @@@@@@       @@@@" << std::endl;
+    std::cout << "@@@@@         @@@@@@           @@@@@@         @@@@" << std::endl;
+    std::cout << "@@@@@    @@@    @@@@@@@     @@@@@@@    @@@    @@@@" << std::endl;
+    std::cout << "@@@@@    @@@@@     @@@@@@ @@@@@@     @@@@@    @@@@" << std::endl;
+    std::cout << "@@@@@    @@@@@       @@@@@@@@@       @@@@@    @@@@" << std::endl;
+
+    sleep(1);
+
+    std::cout << "@@@@@    @@@@@          @@@          @@@@@    @@@@" << std::endl;
+    std::cout << "@@@@@@@  @@@@@                       @@@@@  @@@@@@" << std::endl;
+    std::cout << "@@@@@@@@@@@@@@                       @@@@@@@@@@@@@" << std::endl;
+    std::cout << "     @@@@@@@@@                       @@@@@@@@@    " << std::endl;
+    std::cout << "       @@@@@@@                       @@@@@@@      " << std::endl;
+
+    sleep(1);
+
+    std::cout << "          @@@@                       @@@@         " << std::endl;
+    std::cout << "            @@                       @@           " << std::endl;
+
+    std::cout << '\n';
 
     return 0;
 }
