@@ -1,4 +1,4 @@
-#pragma once
+#pragma once // fix
 
 #include <iostream>
 #include <vector>
@@ -9,7 +9,7 @@
 class Shell
 {
 private:
-    typedef int (Shell::*list_of_functions)(std::vector<std::string>&);
+    typedef int (Shell::*list_of_functions)(std::vector<std::string>&); // wtf!!!!!!!!!
 
     short quantity_commands;
     std::string* list_of_command;
@@ -20,7 +20,7 @@ private:
 public:
     Shell();
 
-    std::vector<std::string> ReadLine();
+    std::vector<std::string> ReadLine(); // hmmmmm
 
     bool StartInternalCommand(std::vector<std::string>&);
 
@@ -28,3 +28,5 @@ public:
 
     ~Shell();
 };
+
+// this code is not cross platform!!!
