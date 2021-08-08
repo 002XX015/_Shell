@@ -12,6 +12,12 @@ Shell::Shell()
     reference_func.push_back(&Shell::cd);
 }
 
+
+Shell::~Shell()
+{
+    delete[] list_of_command;
+}
+
 int Shell::help(std::vector<std::string>& arg)
 {
     std::cout << "Shell v0.9" << std::endl;
@@ -128,9 +134,4 @@ int Shell::StartDefaultShell(std::vector<std::string>& vec)
     }
 
     return 0;
-}
-
-Shell::~Shell()
-{
-    delete[] list_of_command;
 }

@@ -1,15 +1,28 @@
-#pragma once // fix
+#ifndef SHELL_H_
+#define SHELL_H_
 
-#include <iostream>
-#include <vector>
+// c++
+#include <iostream> // cout | cerr | endl
 #include <cstring>
+
+// stl
+#include <vector>
+
+// process
 #include <unistd.h>
 #include <sys/wait.h>
 
 class Shell
 {
 private:
-    typedef int (Shell::*list_of_functions)(std::vector<std::string>&); // wtf!!!!!!!!!
+    typedef int (Shell::*list_of_functions)(std::vector<std::string>&);
+    /*
+            int help(std::vector<std::string>&);
+
+            int = int
+            help = (Shell::*list_of_functions)
+            (std::vector<std::string>&) = (std::vector<std::string>&)
+    */
 
     short quantity_commands;
     std::string* list_of_command;
@@ -20,13 +33,13 @@ private:
 public:
     Shell();
 
-    std::vector<std::string> ReadLine(); // hmmmmm
+    ~Shell();
+
+    std::vector<std::string> ReadLine();
 
     bool StartInternalCommand(std::vector<std::string>&);
 
     int StartDefaultShell(std::vector<std::string>&);
-
-    ~Shell();
 };
 
-// this code is not cross platform!!!
+#endif /* SHELL_H_ */
