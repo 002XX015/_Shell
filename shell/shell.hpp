@@ -29,7 +29,7 @@ private:
     std::vector<list_of_functions> reference_func;
 
     int help(std::vector<std::string>&);
-    int cd(std::vector<std::string>&);
+    int cd(std::vector<std::string>&); // doesn't work
 public:
     Shell();
 
